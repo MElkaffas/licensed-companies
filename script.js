@@ -28,11 +28,10 @@ function populateTable(rows) {
     const websiteCell = document.createElement('td');
     
     // استخراج البيانات حسب الأسماء المخصصة من Google Sheets
-    serialCell.textContent = row['gsx$مسلسل'].$t;
     nameCell.textContent = row['gsx$اسمالشركة'].$t;
     startDateCell.textContent = row['gsx$بدايةالترخيص'].$t;
     endDateCell.textContent = row['gsx$نهايةالترخيص'].$t;
-    emailCell.textContent = row['gsx$الايميل'].$t;
+    emailCell.textContent = row['gsx$الموقع الخاص بالشركة'].$t;
 
     // إنشاء رابط لموقع الشركة
     const websiteLink = document.createElement('a');
